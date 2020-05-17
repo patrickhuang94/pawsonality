@@ -1,0 +1,63 @@
+/* Button.tsx */
+.button {
+  width: 140px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #c4c4c4;
+  cursor: pointer;
+  outline: none;
+}
+
+.button--selected {
+  box-shadow: 0 0 0 1px #30475e;
+}
+
+.button--white {
+  background-color: #fff;
+}
+
+.button--gray {
+  background-color: #ececec;
+}
+
+.button--orange {
+  background-color: #d98202;
+}
+
+/* Sidebar.tsx */
+.sidebar {
+  background-color: #232931;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.sidebar__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 30px;
+}
+
+.sidebar__title {
+  margin-top: 30px;
+  font-size: 48px;
+  color: #fff;
+}
+
+.sidebar__text {
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+  line-height: 24px;
+}
+
+/* ProgressBar.tsx */
+.progress-bar {
+  height: 30px;
+  background-color: #ececec;
+}
+
+.progress-bar__filler {
+  height: 100%;
+  background-color: #d98202;
+}
