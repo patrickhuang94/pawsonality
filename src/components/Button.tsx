@@ -7,6 +7,7 @@ interface ButtonProps {
   title: string
   isSelected: boolean
   color?: string
+  className?: string
 }
 
 const Button = ({
@@ -14,10 +15,11 @@ const Button = ({
   onClick,
   isSelected,
   color = 'white',
+  className,
 }: ButtonProps) => {
   return (
     <button
-      className={classNames(`button`, {
+      className={classNames(`button ${className}`, {
         [`button--${color}`]: color,
         'button--selected': isSelected,
       })}
